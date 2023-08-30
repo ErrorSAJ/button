@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button animation </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contener">
+        <span class="btn">HOVER ME</span>
+        <button id="neon">HOVER ME</button>
+        <a href="#" class="link">HOVER ME</a>
+        <div id="shade" onclick="hide()">HOVER ME</div>
+        <a href="#" class="non">HOVER ME</a>
+        <a href="#" id="pos"><span class="stop">HOVER ME</span></a>
+        <span id="dont"><a href="#" class="got">HOVER ME</a></span>
+        
+    </div>
+    <script>
+        function hide(){
+            let shade = document.getElementById('shade');
+            if(shade.style.display != 'none'){
+                shade.style.display = 'none';
+            }
+            else{
+                shade.style.diplay = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
